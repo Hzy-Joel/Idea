@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="23dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff">
+
+        <com.sg.hzy.idea.UI.CircleImageView
+            android:id="@+id/main_aty_item_headIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_portrait_deafult" />
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/main_aty_item_nicknametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main_aty_item_headIV"
+            android:text="昵称"
+            android:textColor="#0a0909"
+            android:textSize="15sp" />
+        <!-- 日期 -->
+        <TextView
+            android:id="@+id/main_aty_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom"
+            android:text="2018年11月3日"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <!-- 写的文章 -->
+        <WebView
+            android:id="@+id/main_aty_item_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/main_aty_item_say"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/comment" />
+
+            <ImageButton
+                android:id="@+id/main_aty_item_good"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/love_before" />
+
+            <TextView
+                android:id="@+id/main_aty_item_goodnum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_aty_item_commentsNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共有0条评论">
+
+        </TextView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_aty_item_commentsRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+

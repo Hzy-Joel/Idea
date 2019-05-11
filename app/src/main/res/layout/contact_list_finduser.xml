@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/contact_list_aty_findet"
+            android:hint="昵称"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/contact_list_aty_btn_find"
+            android:background="@drawable/find"
+            android:layout_marginRight="10dp"
+            android:layout_width="33dp"
+            android:layout_height="33dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact_list_aty_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/contact_list_aty_findbynickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingTop="10dp"
+            android:text="昵称" />
+
+        <RadioButton
+            android:id="@+id/contact_list_aty_findbyaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="账号" />
+    </RadioGroup>
+</LinearLayout>

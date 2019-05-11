@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/main_aty_navigation_g1"
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/main_aty_navigation_item_Myd"
+            android:icon="@drawable/navigation_idea"
+            android:title="我的idea" />
+        <item
+            android:id="@+id/main_aty_navigation_item_firenders"
+            android:icon="@drawable/navigation_friendlist"
+            android:title="我的好友" />
+        <item
+            android:id="@+id/main_aty_navigation_item_Mylike"
+            android:icon="@drawable/navigation_like"
+            android:title="我的收藏" />
+    </group>
+    <group
+
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/main_aty_navigation_item_setting"
+            android:icon="@drawable/navigation_personset"
+            android:title="个人设置" />
+        <item
+            android:id="@+id/main_aty_navigation_item_aboutus"
+            android:icon="@drawable/navigation_abdout"
+            android:title="关于我们" />
+        <item
+            android:id="@+id/main_aty_navigation_item_loginout"
+            android:icon="@drawable/navigation_exit"
+            android:title="退出" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/main_aty_nv_headcv_bcakground"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <com.sg.hzy.idea.UI.CircleImageView
+            android:id="@+id/main_aty_nv_headcv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_portrait_deafult">
+
+        </com.sg.hzy.idea.UI.CircleImageView>
+
+        <TextView
+            android:id="@+id/main_aty_nv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/main_aty_nv_headcv"
+            android:text="未命名"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/main_aty_nv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_aty_nv_nickname"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/main_aty_nv_headcv"
+            android:text="个性签名未设置"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</FrameLayout>

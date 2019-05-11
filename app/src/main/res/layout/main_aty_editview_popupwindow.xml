@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1eeee"
+    android:orientation="horizontal">
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/main_aty_editview_popupwindow_tvcontext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#fffefe"
+        android:textColor="#151414"
+        android:hint="说点什么"
+        android:textSize="15sp" />
+
+
+    <Button
+
+        android:id="@+id/main_aty_editview_popupwindow_btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#f1eeee"
+        android:text="发送"
+        android:textColor="#8f8c8c" />
+
+</LinearLayout>

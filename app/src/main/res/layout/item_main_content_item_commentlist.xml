@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    >
+    <com.sg.hzy.idea.UI.CircleImageView
+        android:id="@+id/main_aty_item_context_item_commentslist_cv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/head_portrait_deafult"/>
+    <TextView
+        android:layout_toRightOf="@+id/main_aty_item_context_item_commentslist_cv"
+        android:id="@+id/main_aty_item_context_item_commentslist_tvauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="作者："
+        android:textSize="13sp"
+        android:textColor="#3b3b3b" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/main_aty_item_context_item_commentslist_tvdate"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:id="@+id/main_aty_item_context_item_commentslist_tvsays"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:text="内容"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/main_aty_item_context_item_commentslist_tvauthor"
+        android:id="@+id/main_aty_item_context_item_commentslist_tvdate"
+        android:text="日期"/>
+</RelativeLayout>

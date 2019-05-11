@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_aty_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_aty_rltolike"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_aty_tl"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/toolbg"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.sg.hzy.idea.UI.CircleImageView
+                    android:id="@+id/main_aty_cv"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/head_portrait_deafult"
+                    app:border_color="#332f63"
+                    app:border_width="2dp" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_aty_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_aty_tl"
+            android:paddingBottom="60dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="#ffffff" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#00000000"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/main_aty_vp_btn_brower_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:orientation="vertical"
+                    android:paddingTop="2dp">
+
+                    <ImageButton
+                        android:id="@+id/main_aty_vp_btn_brower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00ffffff"
+                        android:clickable="false"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_browse_before" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="发现"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.sg.hzy.idea.UI.CircleImageView
+                    android:id="@+id/main_aty_vp_btn_post"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:background="#00000000"
+                    android:src="@drawable/btn_post"
+                    app:border_color="#ffffff"
+                    app:border_width="6dp" />
+
+                <LinearLayout
+
+                    android:id="@+id/main_aty_vp_btn_session_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingTop="2dp">
+
+                    <ImageButton
+                        android:id="@+id/main_aty_vp_btn_session"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="#00000000"
+                        android:clickable="false"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_message_before" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="消息"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_aty_navigation_view"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/colorAccent"
+        app:menu="@menu/navigation">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

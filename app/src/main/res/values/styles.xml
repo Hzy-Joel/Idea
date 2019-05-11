@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+    <style name="translucent" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item   name="colorPrimary">#332f63</item>
+        <item name="colorAccent">#332f63</item>
+
+    </style>
+
+    <declare-styleable name="PresentationLayout">
+        <attr name="InnerRadius" format="dimension"/>
+        <attr name="Thickness" format="dimension"/>
+        <attr name="TagPadding" format="dimension"/>
+        <attr name="SlideEnable" format="boolean"/>
+        <attr name="SlideLength" format="dimension"/>
+        <attr name="TagViewTextColor" format="color"/>
+        <attr name="TagViewTextSize" format="dimension"/>
+        <attr name="TagViewBackgroundColor" format="color"/>
+        <attr name="TagViewBorderWidth" format="dimension"/>
+        <attr name="TagViewBorderColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="PortraitWrapper">
+        <attr name="BorderColor" format="color"/>
+        <attr name="FirstHaloColor" format="color"/>
+        <attr name="SecondHaloColor" format="color"/>
+        <!--用来计算大小-->
+        <attr name="HaloTotalWidth" format="dimension"/>
+        <attr name="BorderWidth" format="dimension"/>
+    </declare-styleable>
+
+
+    <style name="fontcolor">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="fontoption">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="fontchange">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

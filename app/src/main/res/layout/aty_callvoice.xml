@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f000000"
+    android:orientation="vertical">
+
+    <com.sg.hzy.idea.UI.mChronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/aty_callvoice_timer"
+        android:layout_margin="30dp"/>
+
+
+    <com.sg.hzy.idea.UI.CircleImageView
+        android:paddingBottom="80dp"
+        android:id="@+id/aty_callvoice_headImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/backg"
+        />
+
+    <TextView
+        android:text="nickname"
+        android:id="@+id/aty_callvoice_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aty_callvoice_headImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/aty_callvoice_imagewait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+      />
+    <LinearLayout
+        android:id="@+id/aty_callvoice_ll_sendcall"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/aty_callvoice_btn_cutout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call_cutout"
+            />
+            <TextView
+                android:id="@+id/aty_callvoice_tv_cutout"
+                android:layout_gravity="center"
+                android:text="挂断"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/aty_callvoice_ll_sendcall_ov"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/aty_callvoice_btn_openvoide"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call_openvoice" />
+            <TextView
+                android:id="@+id/aty_callvoice_tv_openvoide"
+                android:layout_gravity="center"
+                android:text="扬声器"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/aty_callvoice_ll_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/aty_callvoice_btn_answer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call_answer"
+                />
+            <TextView
+
+                android:layout_gravity="center"
+                android:text="接听"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/aty_callvoice_btn_reject"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call_cutout" />
+            <TextView
+                android:id="@+id/aty_callvoice_tv_reject"
+                android:layout_gravity="center"
+                android:text="挂断"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

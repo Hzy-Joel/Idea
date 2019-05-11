@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/SetMessage_aty_Rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp">
+
+        <com.hyphenate.easeui.widget.EaseImageView
+            android:background="@drawable/head_portrait_deafult"
+            android:id="@+id/SetMessage_aty_ivhead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            app:ease_shape_type="round" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ti1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            android:layout_toRightOf="@+id/SetMessage_aty_ivhead"
+            android:focusableInTouchMode="true">
+
+            <EditText
+
+                android:id="@+id/SetMessage_aty_et_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" 用户名"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ti2"
+            android:layout_below="@+id/ti1"
+            android:layout_toRightOf="@+id/SetMessage_aty_ivhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+
+                android:id="@+id/SetMessage_aty_et_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" 个性签名"
+                android:singleLine="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/ti2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+
+            android:focusable="true"
+            android:layout_toRightOf="@+id/SetMessage_aty_ivhead"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/SetMessage_aty_et_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint=" 邮箱"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SetMessage_aty_Rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SetMessage_aty_tv_birthday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="出生日期:" />
+
+            <Button
+                android:id="@+id/SetMessage_aty_btn_resetbir"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_btn_ok"
+                android:text="修改" />
+        </LinearLayout>
+        <RadioGroup
+            android:layout_marginTop="18dp"
+            android:id="@+id/SetMessage_aty_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:paddingTop="10dp"
+                android:id="@+id/SetMessage_aty_rg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:paddingTop="10dp"
+                android:id="@+id/SetMessage_aty_rg_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="女" />
+        </RadioGroup>
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_btn_ok"
+            android:id="@+id/SetMessage_aty_btn_submit"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:text="确认" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!-- 发布动态 -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/toolbg"
+    >
+    <ImageView
+        android:background="@drawable/back_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="动态发布"
+        android:textColor="#efeeee"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/news_aty_send"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/send_bg"
+        android:textColor="#efeeee"
+        android:textSize="20sp"
+
+        />
+</RelativeLayout>
+    <EditText
+        android:id="@+id/news_aty_tvcontext"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="说点什么吧..." >
+    </EditText>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:background="@drawable/location_bg"
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:textColor="#030303"
+            android:text="位置定位"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/news_atynoScrollgridview"
+        android:layout_width="290dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/news_atynProgressBar"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff">
+
+            <TextView
+                android:id="@+id/aty_release_et_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="发布"
+                android:textColor="#2747ff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/aty_release_ibpost"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/btn_postd" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_txteditor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="2.0dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_txteditor_style_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="80.0dip"
+                    android:background="@drawable/shape_fontoption_border"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <com.sg.hzy.idea.UI.MyCheckBox
+                        android:id="@+id/mcb_font_option_border"
+                        style="@style/fontchange"
+                        app:checkedResId="@drawable/font_border_selectedn"
+                        app:unCheckedResId="@drawable/font_border" />
+
+                    <com.sg.hzy.idea.UI.MyCheckBox
+                        android:id="@+id/mcb_font_option_inter"
+                        style="@style/fontchange"
+                        app:checkedResId="@drawable/font_inter_selected"
+                        app:unCheckedResId="@drawable/font_inter" />
+
+                    <com.sg.hzy.idea.UI.MyCheckBox
+                        android:id="@+id/mcb_font_option_line"
+                        style="@style/fontchange"
+                        app:checkedResId="@drawable/font_line_selected"
+                        app:unCheckedResId="@drawable/font_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_font_option_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40.0dip"
+                    android:background="@drawable/shape_fontoption_border"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rg_font_option_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_add"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_add_selected"
+                            app:unCheckedResId="@drawable/font_add" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_normal"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_selected"
+                            app:unCheckedResId="@drawable/font_unselected" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_sub"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_sub_selected"
+                            app:unCheckedResId="@drawable/font_sub" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_font_option_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_fontoption_border"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rg_font_option_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_left"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_left_selected"
+                            app:unCheckedResId="@drawable/font_left" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_center"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_center_selected"
+                            app:unCheckedResId="@drawable/font_center" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_right"
+                            style="@style/fontchange"
+                            app:checkedResId="@drawable/font_right_selected"
+                            app:unCheckedResId="@drawable/font_right" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_font_option_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_fontoption_border"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rg_font_option_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_black"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_black_selected"
+                            app:unCheckedResId="@drawable/font_color_black" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_gray"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_gray_selected"
+                            app:unCheckedResId="@drawable/font_color_gray" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_white"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_whete_selected"
+                            app:unCheckedResId="@drawable/font_color_whete" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_blackgray"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_blackgray_selected"
+                            app:unCheckedResId="@drawable/font_color_blackgray" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_blue"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_blue_selected"
+                            app:unCheckedResId="@drawable/font_color_blue" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_green"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_green_selected"
+                            app:unCheckedResId="@drawable/font_color_green" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_red"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_red_selected"
+                            app:unCheckedResId="@drawable/font_color_red" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_violet"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_violet_selected"
+                            app:unCheckedResId="@drawable/font_color_violet" />
+
+                        <com.sg.hzy.idea.UI.MyRadioButton
+                            android:id="@+id/mrb_font_option_yellow"
+                            style="@style/fontcolor"
+                            app:checkedResId="@drawable/font_color_yellow_selected"
+                            app:unCheckedResId="@drawable/font_color_yellow" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#11000000" />
+
+            <LinearLayout
+                android:id="@+id/ll_font_option_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#0fffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip">
+
+                <ImageView
+                    android:id="@+id/tv_txteditor_addlinked"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/insert_img"
+                    android:visibility="visible" />
+
+                <RadioGroup
+                    android:id="@+id/rg_font_option_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.sg.hzy.idea.UI.MyRadioButton
+                        android:id="@+id/iv_font_option_b"
+                        style="@style/fontoption"
+                        app:checkedResId="@drawable/font_border_selectedn"
+                        app:unCheckedResId="@drawable/font_border" />
+
+                    <com.sg.hzy.idea.UI.MyRadioButton
+                        android:id="@+id/iv_font_option_a"
+                        style="@style/fontoption"
+                        app:checkedResId="@drawable/font_selected"
+                        app:unCheckedResId="@drawable/font_unselected" />
+
+                    <com.sg.hzy.idea.UI.MyRadioButton
+                        android:id="@+id/iv_font_option_center"
+                        style="@style/fontoption"
+                        app:checkedResId="@drawable/font_center_selected"
+                        app:unCheckedResId="@drawable/font_center" />
+
+                    <com.sg.hzy.idea.UI.MyRadioButton
+                        android:id="@+id/iv_font_option_color"
+                        style="@style/fontoption"
+                        app:checkedResId="@drawable/font_color_selected"
+                        app:unCheckedResId="@drawable/font_color" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ll"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.sg.hzy.idea.UI.richedittext.view.RichEditText
+                    android:id="@+id/et_txteditor_content"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_item_bg"
+                    android:gravity="start"
+                    android:hint=""
+                    android:maxLength="5000"
+                    android:padding="5dp"
+                    android:textColor="#181717"
+                    android:textColorHint="#ffc6c1c1"
+                    android:textSize="16.0sp" />
+                <TextView
+                    android:id="@+id/aty_release_tv_label"
+                    android:layout_marginLeft="10dp"
+                    android:text="#标签"
+                    android:textColor="#0546a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
