@@ -2,21 +2,22 @@
 具有富文本编辑器的Idea分享App,具备评论和点赞收藏功能
 
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg" width=540 height=960/>
-![首页](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg)
-
-![2](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/2.jpg)
 
 
-![3](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/3.jpg)
+
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/2.jpg" width=540 height=960/>
+
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/3.jpg" width=540 height=960/>
 
 
-![4](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/4.jpg)
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/4.jpg" width=540 height=960/>
 
 
-![5](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/5.jpg)
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/5.jpg" width=540 height=960/>
 
 
-![6](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/6.jpg)
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/6.jpg" width=540 height=960/>
 
-![7](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/richeditview.jpg)
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/richeditview.jpg" width=540 height=960/>
+
 
