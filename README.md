@@ -1,7 +1,7 @@
 环境：基于Bmob构建后端数据库、环信即时聊天功能
 具有富文本编辑器的Idea分享App,具备评论和点赞收藏功能
 
-<img src="https://https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg" width=256 height=256 />
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg" width=256 height=256 />
 ![首页](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg)
 
 ![2](https://github.com/Hzy-Joel/Idea/blob/master/githubpic/2.jpg)
