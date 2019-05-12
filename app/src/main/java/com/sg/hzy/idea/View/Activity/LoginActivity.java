@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.Utils.PermisionUtils;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;

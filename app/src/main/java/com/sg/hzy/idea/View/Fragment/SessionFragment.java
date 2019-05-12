@@ -14,8 +14,8 @@ import com.hyphenate.chat.EMConversation;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.easeui.EaseConstant;
 import com.hyphenate.easeui.ui.EaseConversationListFragment;
-import com.sg.hzy.idea.ChatViewActivity;
-import com.sg.hzy.idea.MainAty;
+import com.sg.hzy.idea.View.Activity.ChatViewActivity;
+import com.sg.hzy.idea.View.Activity.MainAty;
 import com.sg.hzy.idea.R;
 
 import java.util.List;

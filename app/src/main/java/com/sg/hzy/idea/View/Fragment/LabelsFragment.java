@@ -14,15 +14,13 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.sg.hzy.idea.DataClass.Labels;
-import com.sg.hzy.idea.MainAty;
+import com.sg.hzy.idea.View.Activity.MainAty;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
 import com.sg.hzy.idea.R;
-import com.sg.hzy.idea.ReleaseAty;
 import com.sg.hzy.idea.UI.presentation.PresentationLayout;
 
 import java.util.ArrayList;

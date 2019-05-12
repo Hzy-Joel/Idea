@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

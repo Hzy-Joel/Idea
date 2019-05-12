@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,15 +11,11 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.easeui.EaseConstant;
 import com.hyphenate.easeui.HxHelper;
-import com.hyphenate.easeui.ui.EaseBaiduMapActivity;
 import com.hyphenate.easeui.ui.EaseChatFragment;
 import com.hyphenate.easeui.widget.chatrow.EaseCustomChatRowProvider;
 import com.hyphenate.exceptions.EMServiceNotReadyException;
 import com.sg.hzy.idea.DataClass.MUser;
-import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
-
-import java.util.List;
 
 /**
  * Created by 胡泽宇 on 2018/11/13.
@@ -113,7 +109,7 @@ public class ChatViewActivity extends FragmentActivity {
                     try {//单参数
 
 
-                        Intent intent=new Intent(ChatViewActivity.this,VoiceCallActicity.class);
+                        Intent intent=new Intent(ChatViewActivity.this, VoiceCallActicity.class);
                         intent.putExtra(GPModel.Call_Type,GPModel.Call_Voive);
                         intent.putExtra(GPModel.Call_User,towho);
 

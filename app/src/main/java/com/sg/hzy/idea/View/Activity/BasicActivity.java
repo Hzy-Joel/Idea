@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 
 /*

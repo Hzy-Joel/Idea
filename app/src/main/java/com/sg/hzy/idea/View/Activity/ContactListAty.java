@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -23,6 +23,7 @@ import com.hyphenate.easeui.ui.EaseContactListFragment;
 import com.sg.hzy.idea.DataClass.MUser;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 
 import java.util.HashMap;
 import java.util.List;

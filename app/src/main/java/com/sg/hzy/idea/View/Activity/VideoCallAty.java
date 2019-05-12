@@ -1,10 +1,9 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -15,6 +14,7 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.exceptions.EMNoActiveCallException;
 import com.hyphenate.media.EMCallSurfaceView;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.mChronometer;
 import com.superrtc.sdk.VideoView;
 

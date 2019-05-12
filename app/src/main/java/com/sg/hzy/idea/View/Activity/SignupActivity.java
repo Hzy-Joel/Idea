@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 
 public class SignupActivity extends AppCompatActivity {
     EditText sign_account;

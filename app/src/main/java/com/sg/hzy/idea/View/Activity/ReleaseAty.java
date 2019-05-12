@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.sg.hzy.idea.DataClass.Labels;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.MyCheckBox;
 import com.sg.hzy.idea.UI.MyRadioButton;
 import com.sg.hzy.idea.UI.richedittext.bean.FontStyle;

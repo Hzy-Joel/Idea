@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,7 @@ import com.sg.hzy.idea.DataClass.DynamicMessage;
 import com.sg.hzy.idea.DataClass.Labels;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.CircleImageView;
 import com.sg.hzy.idea.UI.DividerItemDecoration;
 import com.sg.hzy.idea.UI.EditViewPopupwindow;
@@ -34,7 +35,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.bmob.v3.datatype.BmobFile;
-import cn.bmob.v3.datatype.BmobPointer;
 
 /**
  * Created by 胡泽宇 on 2018/11/22.

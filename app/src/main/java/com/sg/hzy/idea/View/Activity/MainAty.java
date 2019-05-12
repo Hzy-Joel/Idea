@@ -1,6 +1,5 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
-import android.app.FragmentTransaction;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -49,6 +48,7 @@ import com.hyphenate.easeui.EaseUI;
 import com.hyphenate.easeui.HxHelper;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.util.NetUtils;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.BadgeView;
 import com.sg.hzy.idea.Utils.ScreenUtils;
 import com.sg.hzy.idea.View.Fragment.BorwerFragment;

@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -21,6 +21,7 @@ import com.hyphenate.exceptions.EMNoActiveCallException;
 import com.sg.hzy.idea.DataClass.MUser;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.CircleImageView;
 import com.sg.hzy.idea.UI.mChronometer;
 

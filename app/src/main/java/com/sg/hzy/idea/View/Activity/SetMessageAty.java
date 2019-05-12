@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -25,6 +25,7 @@ import com.bumptech.glide.Glide;
 import com.sg.hzy.idea.DataClass.MUser;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

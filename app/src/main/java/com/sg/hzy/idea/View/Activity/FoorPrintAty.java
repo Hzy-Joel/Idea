@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,7 +9,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -19,19 +18,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baidu.platform.comapi.map.D;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.hyphenate.easeui.EaseConstant;
 import com.sg.hzy.idea.Adapter.DynamicMessageListRAdapter;
-import com.sg.hzy.idea.Adapter.FootPrintAdapter;
 import com.sg.hzy.idea.DataClass.DynamicMessage;
 import com.sg.hzy.idea.DataClass.MUser;
 import com.sg.hzy.idea.Model.BaseModel;
 import com.sg.hzy.idea.Model.GPModel;
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.CircleImageView;
 import com.sg.hzy.idea.UI.SpacesItemDecroation;
-import com.sg.hzy.idea.View.Fragment.BorwerFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,7 +99,7 @@ public class FoorPrintAty extends AppCompatActivity {
                 Log.i(TAG, "OnClick: "+postion);
                 GPModel.getInstance().setMdynamicMessage(footPrintAdapter.getDynamicMessages().get(postion));
 
-                FoorPrintAty.this.startActivity(new Intent(FoorPrintAty.this,ItemContextAty.class));
+                FoorPrintAty.this.startActivity(new Intent(FoorPrintAty.this, ItemContextAty.class));
 
             }
         });

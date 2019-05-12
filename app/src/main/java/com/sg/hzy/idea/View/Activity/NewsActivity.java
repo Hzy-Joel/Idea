@@ -1,4 +1,4 @@
-package com.sg.hzy.idea;
+package com.sg.hzy.idea.View.Activity;
 
 import android.content.ContentResolver;
 import android.content.DialogInterface;
@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.Utils.ImageTools;
 import com.sg.hzy.idea.Adapter.GridViewAdapter;
 import com.sg.hzy.idea.Utils.FileUtils;

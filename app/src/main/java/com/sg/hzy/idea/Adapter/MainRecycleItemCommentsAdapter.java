@@ -2,7 +2,6 @@ package com.sg.hzy.idea.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,20 +10,14 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.sg.hzy.idea.MainAty;
 import com.sg.hzy.idea.Model.GPModel;
 import com.sg.hzy.idea.DataClass.Comments;
-import com.sg.hzy.idea.FoorPrintAty;
+import com.sg.hzy.idea.View.Activity.FoorPrintAty;
 import com.sg.hzy.idea.R;
 import com.sg.hzy.idea.UI.CircleImageView;
 
 
 import java.util.ArrayList;
-
-import jp.wasabeef.glide.transformations.BlurTransformation;
 
 /**
  * Created by 胡泽宇 on 2018/11/11.
