@@ -10,7 +10,7 @@
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/3.jpg" width=540 height=960/>
 
 
-<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/4.jpg" width=540 height=960/>
+<img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/4.png" width=540 height=960/>
 
 
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/5.jpg" width=540 height=960/>
