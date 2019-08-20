@@ -2,7 +2,7 @@
 具有富文本编辑器的Idea分享App,具备评论和点赞收藏功能
 
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg" width=362 height=640/>
-***
+
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/2.jpg" width=362 height=640/>
 
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/3.jpg" width=362 height=640/>
