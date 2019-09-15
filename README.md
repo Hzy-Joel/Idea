@@ -1,6 +1,6 @@
 
 环境：基于Bmob构建后端数据库、环信即时聊天功能
-具有富文本编辑器的Idea分享App,具备评论和点赞收藏功能
+具有富文本编辑器的Idea分享App。
 
 <img src="https://github.com/Hzy-Joel/Idea/blob/master/githubpic/1.jpg" width=362 height=640/>
 
